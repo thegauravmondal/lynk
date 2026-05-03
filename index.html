@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-ABC123XYZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-RTDJSJY9C3');
+</script>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+</div>
+  <title>Lynk App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+</header>
+<header class="topbar">
+  <!-- ✅ ADD LOGO HERE -->
+  <div class="logoBox">
+    <img src="images/logo.png" alt="logo">
+  </div>
+  <div id="leftHeader">
+    <h2 id="pageTitle">Home</h2>
+  </div>
+
+  <div id="rightHeader">
+  <div id="visitorCount">Visitors Today: 0</div>
+</div>
+
+</header>
+
+<!-- MAIN APP -->
+<div class="app">
+
+   <main>
+  
+  <!-- SCREENS -->
+
+    <!-- HOME -->
+    <section id="homeScreen" class="screen active">
+       <div class="hero">
+ <div class="hero-content">
+    <h1>🌍 “No Friends for Trips? We got you.”</h1>
+    <p>Join trips happening in Kolkata now.</p>
+
+    <div class="hero-search">
+      <input id="searchInput" placeholder="Search trips, cities...">
+      <button id="exploreBtn">Explore</button>
+    </div>
+  </div>
+
+  <div id="authArea" class="hero-auth"></div>
+</div>
+
+<div class="placesRow">
+
+  <div class="placeCard">
+    <img src="images/victoria.jpg">
+    <p>Victoria</p>
+  </div>
+
+  <div class="placeCard">
+    <img src="images/howrah.jpg">
+    <p>Howrah Bridge</p>
+  </div>
+
+  <div class="placeCard">
+    <img src="images/Princep.jpg">
+    <p>Princep Ghat</p>
+  </div>
+
+  <div class="placeCard">
+    <img src="images/dakshineshwar.jpg">
+    <p>Dakshineswar</p>
+  </div>
+
+    <div class="placeCard">
+    <img src="images/proud.jpg">
+    <p>Saheed minar</p>
+  </div>
+
+    <div class="placeCard">
+    <img src="images/Esplanade.jpg">
+    <p>Esplanade</p>
+  </div>
+
+   <div class="placeCard">
+    <img src="images/belur.jpg">
+     <p>Belur math</p>
+  </div>
+
+   <div class="placeCard">
+    <img src="images/kalighat.jpg">
+     <p>kalighat</p>
+  </div>
+
+  <div class="placeCard">
+    <img src="images/parkstreet.jpg">
+    <p>Park Street</p>
+  </div>
+
+<div class="placeCard">
+    <img src="images/cathedral.jpg">
+    <p>St. Paul's Cathedral</p>
+  </div>
+
+<div class="placeCard">
+    <img src="images/ecopark.jpg">
+    <p>Eco Park</p>
+  </div>
+
+  <div class="placeCard">
+    <img src="images/biswa.jpg">
+    <p>Biswa bangla gate</p>
+  </div>
+
+  <div class="placeCard">
+    <img src="images/maidan.jpg">
+    <p>Maidan</p>
+  </div>
+
+</div>
+     
+<div class="filterBar">
+  <button data-sort="latest">Newest</button>
+  <button data-sort="date">Date 📅</button>
+  <button data-sort="budget">Budget 💰</button>
+  <button data-sort="trending">🔥</button>
+</div>
+
+      <div id="trips" class="grid"></div>
+
+      <!-- 📘 WHAT IS LYNK (AUTO HIGHLIGHT) -->
+<div class="lynkInfo">
+
+  <div class="lynkHeader">
+    <h2>✨ What is Lynk?</h2>
+    <p>
+      Discover trips. Meet like-minded travelers.  
+      Turn strangers into travel partners and moments into memories.
+    </p>
+  </div>
+
+  <div class="lynkDivider"></div>
+
+  <h3 class="lynkSub">How it works</h3>
+
+  <div class="lynkSteps" id="lynkSteps">
+
+    <div class="step active">
+      <div class="iconWrap"><i class="ri-search-line"></i></div>
+      <h4>Explore</h4>
+      <p>Find trips & hidden places</p>
+    </div>
+
+    <div class="step">
+      <div class="iconWrap"><i class="ri-user-add-line"></i></div>
+      <h4>Join</h4>
+      <p>Travel with real people</p>
+    </div>
+
+    <div class="step">
+      <div class="iconWrap"><i class="ri-add-circle-line"></i></div>
+      <h4>Create</h4>
+      <p>Host your own trip</p>
+    </div>
+
+  </div>
+
+</div>
+      
+      <!-- 📸 POST WITH LYNK CTA -->
+<div class="lynkBanner">
+
+  <img src="images/kolkatabanner.jpeg" class="bannerImg">
+
+  <div class="bannerOverlay">
+
+    <div class="instaBadge">
+      <i class="ri-instagram-line"></i> @joinlynk
+    </div>
+
+    <div class="bannerContent">
+      <h4>Share Your Trip ✨</h4>
+      <p>Click • Tag • Get Featured</p>
+    </div>
+
+    <button id="postNowBtn">Post 🚀</button>
+
+  </div>
+
+</div>
+
+    </section>
+    <!-- ARTICLES SCREEN -->
+<section id="articlesScreen" class="screen">
+  <h3>Explore Kolkata</h3>
+
+  <div class="articlesTabs">
+  <button data-type="places" class="activeArticle">Places</button>
+  <button data-type="food">Food</button>
+  <button data-type="culture">Culture</button>
+</div>
+
+  <div id="articlesList"></div>
+</section>
+
+    <!-- MY TRIPS -->
+    <section id="myTripsScreen" class="screen">
+      <h3>My Trips</h3>
+      <button id="myCreated">Created</button>
+      <button id="myJoined">Joined</button>
+      <div id="myTripsList"></div>
+    </section>
+
+    <!-- TRENDING -->
+    <section id="trendingScreen" class="screen">
+      <h3>🔥 Trending</h3>
+      <div id="trendingTrips"></div>
+    </section>
+
+    <!-- PROFILE -->
+   <section id="profileScreen" class="screen">
+    <div class="notifBox">
+    Notification 🔔
+      <span id="notifDot" class="notifDot hidden"></span> <!-- 🔴 ADD THIS -->
+
+    <div id="notifPanel" class="notifPanel hidden"></div>
+  </div>
+  
+  <div class="profileContainer">
+
+    <h2 class="profileTitle">Complete Your Profile</h2>
+    <div id="profileBox"></div>
+
+    <div id="profileForm" class="profileForm">
+
+      <input id="nameInput" placeholder="Full Name">
+      <input id="ageInput" type="number" placeholder="Age">
+
+      <select id="genderInput">
+        <option value="">Select Gender</option>
+        <option>Male</option>
+        <option>Female</option>
+        <option>Other</option>
+      </select>
+
+      <h4 class="avatarTitle">Choose Your Avatar</h4>
+
+      <div id="avatarGrid" class="avatarGrid"></div>
+
+      <button id="saveProfile" class="saveBtn">Save Profile</button>
+
+    </div>
+
+  </div>
+</section>
+  </main>
+
+  <!-- BOTTOM NAV -->
+ <nav class="bottomNav">
+
+  <button data-screen="homeScreen" data-title="Home">
+    <i class="ri-home-5-line"></i>
+  </button>
+
+  <button data-screen="myTripsScreen" data-title="My Trips">
+    <i class="ri-suitcase-line"></i>
+  </button>
+
+  <button id="openCreate" class="createBtn">
+    <i class="ri-add-line"></i>
+  </button>
+
+  <button data-screen="trendingScreen" data-title="Trending">
+    <i class="ri-fire-line"></i>
+  </button>
+
+  <button data-screen="profileScreen" data-title="Profile" class="profileTab">
+  <i class="ri-user-line"></i>
+  <span id="profileDot" class="notifDot hidden"></span> <!-- 🔴 ADD -->
+</button>
+
+</nav>
+
+<!-- CREATE MODAL -->
+<div id="modal" class="modal hidden">
+  <div class="modalBox">
+    <h3>Create Trip</h3>
+
+    <input id="tripName" placeholder="Trip Name">
+    <input id="budget" placeholder="Budget">
+    <input id="date" type="date">
+
+    <input type="file" id="imageFile" accept="image/*">
+    <img id="preview" style="width:100%; margin-top:10px; display:none;">
+
+    <input id="link" placeholder="WhatsApp Link">
+
+    <!-- ✅ ONLY ONE BUTTON -->
+    <button id="createBtn">Create</button>
+    <button id="closeModal">Cancel</button>
+
+  </div>
+</div>
+<!-- ✅ EMAILJS SCRIPT -->
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+<script>
+  (function(){
+    emailjs.init("v4IsX9891D4BIDZXV"); // 🔥 replace later
+  })();
+</script>
+<script type="module" src="script.js"></script>
+</body>
+</html>
